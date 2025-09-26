@@ -77,22 +77,28 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: var(--light);
-    padding: 4rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1580103186006-3e86ef8edbbb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    color: white;
+    padding: 0 1rem;
 }
 
 .hero h2 {
     font-size: 2.2rem;
     margin-bottom: 1rem;
-    color: var(--primary);
 }
 
 .hero p {
     font-size: 1.2rem;
     max-width: 800px;
-    margin: 0 auto 2rem;
-    color: var(--dark);
+    margin-bottom: 2rem;
 }
 
 .btn {
@@ -133,51 +139,58 @@ nav ul li a:hover {
 }
 
 .feature-card {
+    background-color: white;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    padding: 2rem;
     text-align: center;
-    color: white;
 }
 
 .feature-card.toilettes {
-    background-color: var(--toilettes);
+    border-top: 5px solid var(--toilettes);
 }
 
 .feature-card.savon {
-    background-color: var(--savon);
+    border-top: 5px solid var(--savon);
 }
 
 .feature-card.satisfaction {
-    background-color: var(--satisfaction);
-    color: var(--dark);
+    border-top: 5px solid var(--satisfaction);
 }
 
 .feature-card.carte {
-    background-color: var(--carte);
+    border-top: 5px solid var(--carte);
 }
 
 .feature-card.alerte {
-    background-color: var(--alerte);
+    border-top: 5px solid var(--alerte);
 }
 
 .feature-card.meteo {
-    background-color: var(--meteo);
+    border-top: 5px solid var(--meteo);
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
 }
 
-.feature-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.feature-card img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+}
+
+.feature-card-content {
+    padding: 1rem 1.5rem 2rem;
 }
 
 .feature-card-content h3 {
     margin-bottom: 1rem;
+    color: var(--primary);
 }
 
 /* Stats Section */
@@ -271,5 +284,10 @@ footer a {
 
     .feature-grid {
         grid-template-columns: 1fr;
+    }
+
+    .feature-card img {
+        width: 70%;
+        max-width: 250px;
     }
 }
