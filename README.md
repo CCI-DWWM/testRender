@@ -15,6 +15,9 @@ Essai déploiement
 ```
 
 ## DOCKER
+
+Déployé sur https://testrender-2-vc8z.onrender.com/
+
 ### Build
 ```bash
  docker build --tag render .
@@ -25,3 +28,6 @@ Essai déploiement
  # --rm : supprimer l'instance après execution
   docker run -it --rm -p 8000:8000 --name renderinstance render
 ```
+
+## PWA
+Suivant tuto : https://laconsole.dev/blog/guide-pwa
